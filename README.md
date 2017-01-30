@@ -258,7 +258,7 @@ Please see the full [protocol doc](doc/protocol.md) and [Go client docs](https:/
 
 ### Developing New Clients
 
-While there is no official client development guide yet, developing a Workq client is fairly straightforward simply by reading the [protocol doc](doc/protocol.md). In addition, you can review the [Go client](https://github.com/iamduo/workq) as a working example. If you have questions, please join our [mailing list](https://groups.google.com/d/forum/workq).
+While there is no official client development guide yet, developing a Workq client is fairly straightforward simply by reading the [protocol doc](doc/protocol.md). In addition, you can review the [Go client](https://github.com/iamduo/workq) as a working example. If you have questions, please open a Github issue with the "question" label.
 
 ## Caveats & Limitations
 

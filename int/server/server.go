@@ -46,7 +46,7 @@ type Server struct {
 	stop   chan struct{}
 }
 
-// New returns a initialized, but unstarted  Server
+// New returns a initialized, but unstarted Server
 func New(addr string, router Router, protocol prot.Interface, usage *Usage) *Server {
 	return &Server{
 		Addr:   addr,

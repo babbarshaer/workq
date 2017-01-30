@@ -137,22 +137,22 @@ func (r *RunRecord) WriteResult(result Result, success bool) bool {
 	}
 
 	r.Result = result
-	waitResult := &WaitResult{Result: result, Success: success}
+	waitResult := &RunResult{Result: result, Success: success}
 	r.Wait <- waitResult
 	return true
 }
 
 type Result []byte
 
-// WaitResult is sent over the Wait channel.
+// RunResult is sent over the Wait channel.
 // Allows readers to wait for a result and determine the success.
-type WaitResult struct {
+type RunResult struct {
 	Success bool
 	Result  Result
 }
 
 // Wait channel for active connected readers.
-type Wait chan *WaitResult
+type Wait chan *RunResult
 
 // Timer container encapsulates the original time.Timer with support for
 // Cancellation.

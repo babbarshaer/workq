@@ -3,6 +3,10 @@ language: go
 go:
   - 1.7
 
+before_install:
+  - go get github.com/wadey/gocovmerge
+  - go get github.com/mattn/goveralls
+
 install: make deps
 
-script: make test
+script: ./.test-cover.sh
